@@ -3,11 +3,14 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 
+const [, , lastItem] = ['boots', 'tent', 'headlamp'];
+console.log(lastItem);
+
 ReactDOM.render(
-  <React.Fragment>
-    <App authorized={true} />,
+  <>
+    <App authorized={true} />
     <Footer />
-  </React.Fragment>,
+  </>,
   document.getElementById("root")
 );
 
