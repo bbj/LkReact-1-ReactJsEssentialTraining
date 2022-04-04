@@ -3,9 +3,6 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 
-const [, , lastItem] = ['boots', 'tent', 'headlamp'];
-console.log(lastItem);
-
 ReactDOM.render(
   <>
     <App authorized={true} />
