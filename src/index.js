@@ -2,15 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
+import { BrowserRouter as Router } from "react-router-dom";
 
 ReactDOM.render(
-  <>
-    <App login='bbj' />
-    <Footer />
-  </>,
+  <Router>
+    <App />
+  </Router>,
   document.getElementById("root")
 );
 
-function Footer() {
-  return <h6>Copyright {new Date().getFullYear()}</h6>
-}
+//<Router></Router> gives the App access to properties of a router
+//: location, history etc
